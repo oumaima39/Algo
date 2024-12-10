@@ -5,8 +5,7 @@
 char *ChargerChaine(int N) {
     char *chaine = (char*)malloc(N+1); 
     printf("Veuillez saisir la chaine:\n");
-    fgets(chaine, N, stdin);
-    chaine[strcspn(chaine, "\n")] = '\0'; 
+    gets(chaine);
     return chaine;
 }
 
